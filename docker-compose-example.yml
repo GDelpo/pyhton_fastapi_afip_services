@@ -9,7 +9,7 @@ services:
     ports:
       - "8000:8000" # Port mapping between the container and the host machine (host_port:container_port)
     volumes:
-      - relative_path_to_your_folder: complete_path_to_your_folder # Volume mapping between the host machine and the container (host_path:container_path)
+      - relative_path_to_your_folder: /app/credentials # Volume mapping between the host machine and the container (host_path:container_path)
       - ./logs:/app/logs # Volume mapping between the host machine and the container (host_path:container_path) 
     environment:
       - TZ=America/Argentina/Buenos_Aires # Timezone of the container
